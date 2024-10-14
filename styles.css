@@ -1,0 +1,392 @@
+footer{
+    background-color: #44443f;
+    margin-top: 15rem;
+  }
+  
+  a.website{
+      color: rgb(255, 255, 255);
+      position: relative;
+      text-decoration: none;
+      margin-bottom: 2rem;
+  
+  }
+  hr{
+    color:white;
+  }
+  a.website::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a.website:hover::before  {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+  
+  #strong{
+    font-size: 3.375rem ;
+    margin-bottom: 4rem;
+  }
+  .d-block{
+    text-align:center;
+  }
+  .sitemap{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  body{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+     -webkit-text-size-adjust: 100%;
+  }
+  
+  #logo{
+    margin: auto;
+    visibility: visible;
+  }
+  
+  
+   @media (max-width:452px) { 
+    #logo{ 
+        visibility:hidden;
+        
+        }
+       }
+  
+  /* Heading Styles*/
+  
+  #simi{
+      font-size:5.625rem;
+      color:rgb(255, 255, 255);
+     margin-top: 4rem;
+      position: relative;
+  
+  }
+  
+   @media (max-width:768px) { 
+    #simi{ 
+        font-size: 80px;
+        margin-top:2rem;
+        }
+       }
+  
+  @media (max-width:452px) { 
+    #simi{ 
+        font-size: 70px;
+        z-index: 1;
+        }
+       }
+  
+  
+  
+  #lead{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    position: relative;
+  }
+  
+  p.h6{
+    margin-top:1rem;
+    color:rgb(255, 255, 255) !important;
+    text-align: center;
+    margin-bottom: 10rem;
+    font-size: 1.563rem;
+    opacity: 1 !important;
+  }
+  
+  /* Fade in text when reload */
+  @keyframes heading {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+  }
+  /* background-image styles*/
+  
+  
+  .img-container{
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    background-size:contain;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+  
+  }
+  .inner-container{
+   position: absolute;
+   height: 100%;
+   object-fit: cover;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   filter: brightness(50%);
+  }
+  
+   @media (max-width:768px) { 
+    .inner-container { 
+      object-position: 50% 0;}
+      }
+  
+  
+  
+  /* Making the text fade in on reload*/
+  .heading-animation {
+    animation: 1.5s heading; 
+  }
+  
+  
+  /* Navbar Styles */
+  
+  
+  a.nav-link, a.navbar-brand, a {
+      color: rgb(0, 0, 0);
+      position: relative;
+      text-decoration: none
+  
+  }
+  
+  .navbar-brand{
+    font-size: 1.5rem;
+    
+  }
+  
+  a.nav-link::before, a.navbar-brand::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a.nav-link:hover::before,  a.navbar-brand:hover::before  {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  nav{
+    background-color: #D9D9CF;
+    animation: 1s fly-in; 
+    animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+  
+  }
+  
+  
+  @keyframes fly-in {
+    0% {
+      transform: translateX(-100%);
+  
+    }
+    100% {
+      transform: translateX(0%);
+  }
+  }
+  
+  /* Fade In Text When Scroll */
+  .tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+  
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  /* info paragraph styles */
+  
+  p.h1{
+      font-size:4.375rem;
+      color:rgb(0, 0, 0);
+  
+  }
+  .sec{
+    text-align: center;
+  }
+  
+  .description{
+    position: relative;
+    text-align: center;
+  }
+  
+  #volunteer-opp{
+    margin-top: 15rem;
+    background-color: #ACB2AA;
+    background-position: center;
+    height: fit-content;
+    padding-bottom: 5vh;
+    margin-bottom: 6rem;
+  }
+  
+  #our-mission{
+    background-color: #949EA8;
+    background-position: center;
+    padding-bottom: 5vh;
+  }
+  
+  
+  /* image of people volunteering styles */
+  #volunteer-img{
+    overflow: hidden;
+  }
+  img.vol-img{
+    width:60%;
+    margin-left: 9rem;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  img.vol-img:hover{
+    transform: scale(1.1);
+  }
+  /* Make the image 100% of the width of the viewport when the screen is smaller */
+   @media (max-width:768px) { 
+    .vol-img { 
+      display: block;
+       margin-left: auto !important; 
+       margin-right: auto; 
+       margin-top: 4rem;} 
+       }
+  
+  
+  col-12{
+    margin-bottom: 5rem;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .collapsing {
+          transition-property: height, visibility;
+          transition-duration: .35s;
+      }
+  }
+  
+  /* Card styles */
+  .card {
+    margin-top: 4rem;
+    overflow: hidden;
+    width: 18rem;
+  }
+  
+  .card:hover .card-bg{
+    transform: scale(1.1);
+    
+  }
+  
+  .card-bg{
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .bi{
+    font-size: 1.875rem;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .learn-more{
+    font-size: 1.875rem;
+  }
+  
+  
+  .card-title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .card:hover .card-title::before{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .card-title {
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+  
+  .card:hover .bi{
+    color: rgb(88, 85, 85);
+  }
+  
+  .col-md-4{
+    margin-bottom: 5rem;
+  }
+  
+  @media (max-width:768px) { 
+    .col-md-4{
+    margin-bottom: 10rem;} 
+    }
+  
+  /* Make the cards the 100% of width of the viewport when the screen is smaller */
+  @media (max-width:768px) { 
+    .card{
+    width: 100% !important; 
+    height: 100%;
+    overflow: hidden; 
+    margin-bottom: 1rem;} 
+    }
+  
+  
+  .offlinecontainer {
+      width:100%;
+      height:100%;
+  }
+  
+  .card-bg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .view-more{
+    background-color: rgb(186, 215, 240);
+    width: fit-content !important;
+    height: fit-content !important;
+    display: block;
+  
+  }
+  
+  @media (max-width:768px) { 
+    .view-more{
+      text-align: center ;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      } 
+    }
+  
+  
